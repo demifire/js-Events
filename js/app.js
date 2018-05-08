@@ -33,18 +33,28 @@ button2.addEventListener('click', lessContent);
 
 /* function zoom() {
     biggie.style.fontSize = "150%";
-} */
+} 
+
+biggie.addEventListener('hover', zoom);
+*/
 
 document.getElementById("biggie").onmouseover = function() { biggie.style.fontSize = "150%"; }
 document.getElementById("biggie").onmouseout  = function() { biggie.style.fontSize = "inherit"; }
-
-//biggie.addEventListener('hover', zoom);
 
 //4. McDonalds
 /*Create a variable name menuItems and assign it an array of three of your favorite items at McDonald's.
 
 Next, create a function named valueMenu that will display your favorite items in the paragraph the the id of `menu` after clicking on the showMenu paragraph.*/
 
+function valueMenu() {
+    var menuItems = ['big mac', 'little mac', 'little big mac'];
+    for (var i = 0; i<menuItems.length; i++){
+        var mcPoo = document.createElement('p');
+        mcPoo.innerHTML = menuItems[i];
+        menu.appendChild(mcPoo);}
+}
+
+showMenu.addEventListener('click', valueMenu(menuItems));
 
 //5. Gin.
 /*Create a function named redFace that will change the paragraph text to red and a font size of 30px after clicking on the text.*/
