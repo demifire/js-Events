@@ -11,10 +11,13 @@ function moreContent() {
     addStuff.innerHTML = bacon;
     daParagraph = document.getElementsByClassName('block1')[0].getElementsByTagName('p')[0];
     daParagraph.appendChild(addStuff);
+    button1.style.display = 'none';
 }
 
 var button1 = document.getElementById('one');
 button1.addEventListener('click', moreContent);
+
+
 
 //2. HTTP
 /*Create a function named `lessContent` that will initiate the `Show Less` link after clicking on it.
@@ -51,8 +54,8 @@ function valueMenu() {
     for (var i = 0; i<menuItems.length; i++){
         var mcPoo = document.createElement('p');
         mcPoo.innerHTML = menuItems[i];
-        //mcPoo.style.display = 'block';
         menu.appendChild(mcPoo);}
+        showMenu.onclick = "";
 }
 
 //5. Gin.
@@ -70,6 +73,7 @@ function showPrice() {
     var doop = document.createElement('span');
     doop.innerHTML = "$5.55";
     price.appendChild(doop);
+    oreo.onmouseover = "";
 }
 
 //7. Mr. Buttons
@@ -77,14 +81,33 @@ function showPrice() {
 
 var myQuote = "Our lives are defined by opportunities; even the ones we miss.";
 
+function addQuote() {
+    daisy.innerHTML = myQuote;
+}
+
+Benjamin.addEventListener('click', addQuote);
 
 //8. Say It again, Randomly
 /*Create a function that will generate a random quote from the variable below after clicking on the button.*/
 
 var quotes = ["It's a funny thing about comin' home. Looks the same, smells the same, feels the same. You'll realize what's changed is you.", "Momma? Momma? Some days, I feel different than the day before.", "Some people, were born to sit by a river. Some get struck by lightning. Some have an ear for music. Some are artists. Some swim. Some know buttons. Some know Shakespeare. Some are mothers. And some people, dance.", "For what it's worth, it's never too late to be whoever you want to be."];
 
+function randomTho() {
+    beni.innerHTML = quotes[Math.floor(Math.random() * (quotes.length))];
+}
 
+random.addEventListener('click', randomTho);
 
 //9. Unlock the Secret to Financial Freedom
 /*Create an event listener that will show and hide the message when clicking on the button.
 */
+
+function showDaKine() {
+    if (showmoney.style.display === 'none') {
+        showmoney.style.display = 'block';
+      } else {
+        showmoney.style.display = 'none';
+      }
+}
+
+showHide.addEventListener('click', showDaKine);
