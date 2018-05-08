@@ -51,10 +51,9 @@ function valueMenu() {
     for (var i = 0; i<menuItems.length; i++){
         var mcPoo = document.createElement('p');
         mcPoo.innerHTML = menuItems[i];
+        //mcPoo.style.display = 'block';
         menu.appendChild(mcPoo);}
 }
-
-showMenu.addEventListener('click', valueMenu(menuItems));
 
 //5. Gin.
 /*Create a function named redFace that will change the paragraph text to red and a font size of 30px after clicking on the text.*/
