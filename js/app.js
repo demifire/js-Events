@@ -58,10 +58,19 @@ function valueMenu() {
 //5. Gin.
 /*Create a function named redFace that will change the paragraph text to red and a font size of 30px after clicking on the text.*/
 
+function redFace(){
+    drink.style.fontSize = "30px";
+    drink.style.color = "red";
+}
 
 //6. Peanut Butter Cup Oreos
 /*Create a function `showPrice` that will add the price of `$5.55` inside the paragraph with the id `price` after hovering your mouse over the paragraph.*/
 
+function showPrice() {
+    var doop = document.createElement('span');
+    doop.innerHTML = "$5.55";
+    price.appendChild(doop);
+}
 
 //7. Mr. Buttons
 /*Add an Event Listener to the button that will display `myQuote` inside the paragraph with the id of `displayQuote` after the button is clicked.*/
